@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <link rel="dns-prefetch" href="//www.zuohuadong">
+  <title>解放号与威客的一些思考 | 左华栋的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="传统商品售卖，顾客往往是出于对商品品牌、对售卖人的信任，比如名牌和微商就是这两个极端的代表。而威客是以技术服务为商品的，技术服务这种的具有一定的时间性和不可见性，即双方都不知道在服务期限内会不会出现意外，也不知道对方是按照什么标准来做什么标准来验收的。所以，威客这种服务，信任危机是与生俱来的，
+而平台的出现，一定程度上将双方的信任改变为对平台的信任，之前号称国内第一威客平台的某西游网，初期确实带动">
+<meta property="og:type" content="article">
+<meta property="og:title" content="解放号与威客的一些思考">
+<meta property="og:url" content="//www.zuohuadong/2016/01/16/jiefanghaoweike/index.html">
+<meta property="og:site_name" content="左华栋的博客">
+<meta property="og:description" content="传统商品售卖，顾客往往是出于对商品品牌、对售卖人的信任，比如名牌和微商就是这两个极端的代表。而威客是以技术服务为商品的，技术服务这种的具有一定的时间性和不可见性，即双方都不知道在服务期限内会不会出现意外，也不知道对方是按照什么标准来做什么标准来验收的。所以，威客这种服务，信任危机是与生俱来的，
+而平台的出现，一定程度上将双方的信任改变为对平台的信任，之前号称国内第一威客平台的某西游网，初期确实带动">
+<meta property="og:updated_time" content="2016-12-14T17:34:52.951Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="解放号与威客的一些思考">
+<meta name="twitter:description" content="传统商品售卖，顾客往往是出于对商品品牌、对售卖人的信任，比如名牌和微商就是这两个极端的代表。而威客是以技术服务为商品的，技术服务这种的具有一定的时间性和不可见性，即双方都不知道在服务期限内会不会出现意外，也不知道对方是按照什么标准来做什么标准来验收的。所以，威客这种服务，信任危机是与生俱来的，
+而平台的出现，一定程度上将双方的信任改变为对平台的信任，之前号称国内第一威客平台的某西游网，初期确实带动">
+  
+    <link rel="alternative" href="/atom.xml" title="左华栋的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/main.css?v=4.0.0.css">
+  
+
+  
+
+</head>
+
+<body>
+  <div id="container" q-class="show:isCtnShow">
+    <canvas id="anm-canvas" class="anm-canvas"></canvas>
+    <div class="left-col" q-class="show:isShow">
+      <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			<img src="/avatar.png" class="js-avatar">
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">zuohuadong</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">敢于尝试</p>
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/tags/随笔/">随笔</a></li>
+	        
+				<li><a href="/tags/web/">web</a></li>
+	        
+				<li><a href="/tags/运维/">运维</a></li>
+	        
+				<li><a href="/tags/技术/">技术</a></li>
+	        
+				<li><a href="/tags/产品/">产品</a></li>
+	        
+				<li><a href="/tags/金融/">金融</a></li>
+	        
+				<li><a href="/tags/其他/">其他</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a data-idx="0" q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
+    			
+    			
+            
+    			
+    			<a data-idx="1" q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
+    			
+    			
+            
+    			
+    			<a data-idx="2" q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+		        
+					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+		        
+					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+		        
+					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
+    </div>
+    <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-sort"></i></div>
+  		<h1 class="header-author js-mobile-header hide">zuohuadong</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img src="/avatar.png" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">zuohuadong</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">敢于尝试</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/tags/随笔/">随笔</a></li>
+		        
+					<li><a href="/tags/web/">web</a></li>
+		        
+					<li><a href="/tags/运维/">运维</a></li>
+		        
+					<li><a href="/tags/技术/">技术</a></li>
+		        
+					<li><a href="/tags/产品/">产品</a></li>
+		        
+					<li><a href="/tags/金融/">金融</a></li>
+		        
+					<li><a href="/tags/其他/">其他</a></li>
+		        
+		        
+		        	<li><a href="/archives/">所有文章</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+			        
+						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+			        
+						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+			        
+						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div id="wrapper" class="body-wrap">
+        <div class="menu-l">
+          <div class="canvas-wrap">
+            <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
+          </div>
+          <div id="js-content" class="content-ll">
+            <article id="post-jiefanghaoweike" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      解放号与威客的一些思考
+    </h1>
+  
+
+        <a href="/2016/01/16/jiefanghaoweike/" class="archive-article-date">
+  	<time datetime="2016-01-16T09:31:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-01-16</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>传统商品售卖，顾客往往是出于对商品品牌、对售卖人的信任，比如名牌和微商就是这两个极端的代表。而威客是以技术服务为商品的，技术服务这种的具有一定的时间性和不可见性，即双方都不知道在服务期限内会不会出现意外，也不知道对方是按照什么标准来做什么标准来验收的。所以，威客这种服务，信任危机是与生俱来的，</p>
+<p>而平台的出现，一定程度上将双方的信任改变为对平台的信任，之前号称国内第一威客平台的某西游网，初期确实带动了一部分威客致富，但随着威客的增多，平台知名度的增强，一些通过平台漏洞来赚钱的人也越来越多，于是需求方坑服务方，自己选自己中标。服务方坑需求方，一堆不相关垃圾作品奉上，选我中标后才给你开始服务。而平台固定收取佣金的方式，导致平台本身也没有动力去制止这种行为。于是，再一次的信任危机爆发。<br><a id="more"></a></p>
+<p>最近，有一句话逐渐流行起来，叫“专业的人做专业的事”。原本这句话是讲公司内部分工问题，逐渐延伸为外包。请记住，最初这句话说的是公司内部的分工问题，但是一旦延伸到外包，外包团队和你的利益点和需求点都是不一样的，他们是他们公司的利益，所以这句话延伸的前提是这个外包团队可信。于是，大家开始把非核心业务外包，我们之前接触到的一个客户连续被三个外包团队骗了，最后给他交付的东西，是一套现成的源码，根本不是客户的需求。所以很多客户要求本地，需要实地考察，一定程度上也反应了外包产业的混乱。所以逐渐出现两个极端，小的外包团队价格越拼越低，大的外包团队价格越拼越高，反而是有质量的产品难以出现，整个外包产业都很浮躁，简单，快速解决问题，就跟游戏打怪升级一样升到100级再说，装备跟不上也不管了。</p>
+<p>这里有必要说下收取交易佣金的问题，既然威客的服务也是属于一种商品的性质，那么，就有理由参考淘宝、天猫、京东这些网站，不论是国外的ebay还是国内的电商网站，交易佣金是不直接收取的，威客这种高服务性质的，如果存在佣金，很多人通过平台交易一次后，就逐渐专为线下交易，或者转为其他不收取服务费平台的交易，服务是有一定时间的，双方通过这段时间相互熟悉，理解，信任，还是很有可能的，对于平台的感情不一定大于人情，这是很难解决的。而免费的则通过店铺VIP、引流方式收取服务商的费用，但是这种，你也很难保证威客的质量，换句话来说，威客这种平台天生存在两种人，一种低价解决需求就行的人，对应的手头有一堆代码，破解的，没授权的，之前做的，能分分钟解决问题，但可能漏洞百出，但是需求方就是需要这种的，我淘宝买套代码才500，你改改东西就要收我5000，这是低端需求方没办法接受的。另外一种姑且称为高端需求方，他们意思也很明确，我给你这么多钱，你好歹给我做好点吧，但是用旧程序做的，用侵权程序做的，也比比皆是，作为需求方也很难辨别，往往当了个冤大头。有些有点条件的需求方，朋友懂点技术，就开始胡乱要求，比如你为什么不拿C++这种高效率的程序做网站呢，你跟他对喷没有好处，需求方请的人肯定是他信任的人，你按照他的方式做也是坑爹，只能慢慢理论。所以从趋势来看，整体应该是会逐渐偏向于免佣金的形式，但是会收取服务方的服务费，当然，你平台流量肯定是得有的，不然真没人掏服务费，而且怎么避免那些没有能力，但有钱的团队不会破坏这一平衡呢，这需要一个长期沉淀结果，而且团队这种的也是会变的，万一哪一天核心人员都走了，可真就从高质量团队变成低质量的团队了，这种不可控因素也太多。这种不如直接从人身上做把控，一些团队由哪些高质量的人组成，当然面临的问题就是有些接私活的怎么办，隐私怎么保证的问题。从整个中低的外包市场来看，往往做的质量比较高的是一些大企业，尤其是是BAT这样企业的员工，做的东西质量和逻辑上都比较不错，相对来说价格也算合理，但是有时间问题，比如近期公司突然上线一个项目，这就有可能导致外包的活要延期。另外，由于本身资金来源不是外包，这个难以严格把控，没有个制约的条件。</p>
+<p>整理下总体的需求，低端的不谈，基本上淘宝就能解决这问题，也确实很多通过淘宝交易。谈所谓高端些的需求方，给钱，把事做漂亮，但是又没办法验证代码的质量，最基本的也就是通过使用功能看看有没有问题，看看界面做的怎么样之类的，随时催问下进度。当然也不乏一些有技术要求的客户，比如大公司项目的某一部分外包或者是已经做了一部分的项目二包，这种的是有明确技术要求的。长远来看，外包和自己构建团队开发的区别主要在于外包注重快速简单的开发，而自己团队往往考虑开发周期的同时也考虑项目的可维护性，这点几乎是难以避免的。我们对于这种方式有个解决办法是先找一个可靠的维护团队，再让可靠的维护团队找一个自己不认识的开发团队，通过维护团队来倒逼开发团队不可能做一些难以维护的事情。当然，对于平台来说，怎么做，或者怎么实现就很难了。另外一方面，从服务方需求来谈，服务方往往需要的是高质量的项目，这些包括，需求确定，资金充足，便于沟通，相互信任等，可以说有一半的问题都存在于需求沟通上，这个我暂时没有看到有一个威客平台去提供比较严格的需求模板来帮助用户整理需求的，都是给一些无关痛痒的，甚至是一般用户不理解的东西。然后签订好协议之后，就是开发阶段了，一般情况是需要制定流程，比如网站从原型图到UI 再到web前端&nbsp;再到后端部分，是需要一套较为规范的流程以及相应的审核标准。便于沟通这个来说，普遍用户习惯还是在于QQ和电话，比如传文件、屏幕演示、语音，当然缺点也在于举证麻烦，所以很多网站为了解决双方沟通问题，派客服去跟进去解决双方矛盾，一定程度上能缓解这个问题，带来的好处也是双方对平台的依赖性提高，坏处也显而易见，就是对于平台，这样人工成本太高。</p>
+<p>解放号尝试解决的问题是利用合同和资金托管来解决需求方诚信的问题，用git提交物和代码质量检验来解决服务方诚信问题，固定佣金提成，不设VIP，也没有各种加急什么的。可以说，解决的是基础需求层次，但并未做更深一步的延伸。而猪八戒网又在高端领域做了天蓬网，比如设计类的规定哪一级别的设计师，每页不得低于多少元，开发类对项目时间、人力、价格三维做了对比参考，交易不收取佣金，对服务商严格审核，也算是进了一步，但老问题依旧，取证困难的问题依然没有得到解决。当然威客平台这种方式有个问题在于当然前提是网站有大量的客户流量，而且需要适当平衡双方，需求方太多，没有人接单也不行，服务方太多，抢一个单做，导致恶性竞争也不行。一般任务来说，有80%以上的都是常用需求或者类似需求，比如网站中&nbsp;微信平台基本功能&nbsp;关键词回复、自定义回复、优惠券、微商城、多级分销、各种促销推销活动，企业CMS站，商城、论坛、问答系统&nbsp;这些占大多数，能对这样的做一个统一的定价参考范围，也有利于需求方了解大致价格发包，服务方筛选合适的单子。</p>
+<p>总的来说，解放号有着大量优质的接包方资源，但需求来说较少，也处于供需不平衡的阶段，很多服务商依旧把解放号作为第二选择，简单放心地拿到外包，但总量不太多。。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/一品威客/">一品威客</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/互联网/">互联网</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/产品/">产品</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/天蓬网/">天蓬网</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/威客/">威客</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/猪八戒/">猪八戒</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/解放号/">解放号</a></li></ul>
+	</div>
+
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://www.zuohuadong/2016/01/16/jiefanghaoweike/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2016/05/26/chanpinmianshi/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          最近关于人人网和产品相关面试的思考
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/12/23/dogs/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">请不要吃那些狗狗了好么</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="jiefanghaoweike" data-title="解放号与威客的一些思考" data-url="//www.zuohuadong/2016/01/16/jiefanghaoweike/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"zuohuadong"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 zuohuadong
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		mathjax: false,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/",
+		innerArchive: true
+	}
+</script>
+
+<script src="/./main.js?v=4.0.0.js"></script>
+
+
+    
+<div class="tools-col" q-class="show:isShow,hide:isShow|isFalse" q-on="click:stop(e)">
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all" q-show="innerArchive">
+        <div class="search-wrap">
+          <input class="search-ipt" q-model="search" type="text" placeholder="find something…">
+          <i class="icon-search icon" q-show="search|isEmptyStr"></i>
+          <i class="icon-close icon" q-show="search|isNotEmptyStr" q-on="click:clearChose(e)"></i>
+        </div>
+        <div class="widget tagcloud search-tag">
+          <p class="search-tag-wording">tag:</p>
+          <label class="search-switch">
+            <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
+          </label>
+          <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">XV梦幻之旅</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">69800</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">传销</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">金融</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">产品</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">面试</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">人人网</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">互联网</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">爱狗</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">随笔</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">DK币</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">虚拟货币</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">旁氏骗局</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">二维码</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">PHP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">加密</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">技术</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">解放号</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">一品威客</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">猪八戒</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">天蓬网</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">威客</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">刷单</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">众筹</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">资金盘</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">经济</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">第一篇</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">web</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">随机算法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">随机数</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">微信</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">微信电脑端</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">qq</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">wechat</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">alipay</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">支付宝</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">安全</a>
+              </li>
+            
+            <div class="clearfix"></div>
+          </ul>
+        </div>
+        <ul class="search-ul">
+          <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
+            缺失模块。<br/>1、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
+            2、在根目录_config.yml里添加配置：
+<pre style="font-size: 12px;" q-show="jsonFail">
+  jsonContent:
+    meta: false
+    pages: false
+    posts:
+      title: true
+      date: true
+      path: true
+      text: true
+      raw: false
+      content: false
+      slug: false
+      updated: false
+      comments: false
+      link: false
+      permalink: false
+      excerpt: false
+      categories: false
+      tags: true
+</pre>
+          </p>
+          <li class="search-li" q-repeat="items" q-show="isShow">
+            <a q-attr="href:path|urlformat" class="search-title"><i class="icon-quo-left icon"></i><span q-text="title"></span></a>
+            <p class="search-time">
+              <i class="icon-calendar icon"></i>
+              <span q-text="date|dateformat"></span>
+            </p>
+            <p class="search-tag">
+              <i class="icon-price-tags icon"></i>
+              <span q-repeat="tags" q-on="click:choseTag(e, name)" q-text="name|tagformat"></span>
+            </p>
+          </li>
+        </ul>
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-friends" q-show="friends">
+  		
+        <ul class="search-ul">
+          
+            <li class="search-li">
+              <a href="https://www.ibenchu.com/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>本初网络</a>
+            </li>
+          
+        </ul>
+  		
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-me" q-show="aboutme">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>
