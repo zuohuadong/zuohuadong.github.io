@@ -6,17 +6,39 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="//www.zuohuadong">
-  <title>Archives: 2016 | 左华栋的博客</title>
+  <title>PHP生成更好的随机数 | 左华栋的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="热衷于技术的产品经理。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="左华栋的博客">
-<meta property="og:url" content="//www.zuohuadong/archives/2016/index.html">
+  <meta name="description" content="PHP不论是mt_rand 还是rand函数，都太差了，下面我用一张图证明：
+一个比较简单的方法，用随机数填充一个位图，下面是一个填充黑白图像的例子。这个是用C#的System.Random类生成的随机数填充的位图、这个是用php的rand函数生成的随机数填充的位图
+那么，一目了然。
+PHP7下可以直接使用 random函数，
+但是PHP5以上没有random函数怎么办呢？
+看看这个吧：
+http">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PHP生成更好的随机数">
+<meta property="og:url" content="//www.zuohuadong/2016/11/22/php_rand/index.html">
 <meta property="og:site_name" content="左华栋的博客">
-<meta property="og:description" content="热衷于技术的产品经理。">
+<meta property="og:description" content="PHP不论是mt_rand 还是rand函数，都太差了，下面我用一张图证明：
+一个比较简单的方法，用随机数填充一个位图，下面是一个填充黑白图像的例子。这个是用C#的System.Random类生成的随机数填充的位图、这个是用php的rand函数生成的随机数填充的位图
+那么，一目了然。
+PHP7下可以直接使用 random函数，
+但是PHP5以上没有random函数怎么办呢？
+看看这个吧：
+http">
+<meta property="og:image" content="http://imglf1.nosdn.127.net/img/RzFXblMwRnlLZEhZNHNxWjNmcXRUcDJNTmxJZHNxQUtjWUJUbExnSlh5RmJPbVNIajlRd1BRPT0.jpg?=imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg%7Cwatermark&type=2">
+<meta property="og:image" content="http://imglf.nosdn.127.net/img/RzFXblMwRnlLZEd2M2VxcVhVMDZMclM1VzV3cDBCaHZPT1lHWmhOcjZOandhL3ZMVndyOExnPT0.jpg?=imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg%7Cwatermark&type=2">
+<meta property="og:updated_time" content="2016-12-14T16:22:28.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="左华栋的博客">
-<meta name="twitter:description" content="热衷于技术的产品经理。">
+<meta name="twitter:title" content="PHP生成更好的随机数">
+<meta name="twitter:description" content="PHP不论是mt_rand 还是rand函数，都太差了，下面我用一张图证明：
+一个比较简单的方法，用随机数填充一个位图，下面是一个填充黑白图像的例子。这个是用C#的System.Random类生成的随机数填充的位图、这个是用php的rand函数生成的随机数填充的位图
+那么，一目了然。
+PHP7下可以直接使用 random函数，
+但是PHP5以上没有random函数怎么办呢？
+看看这个吧：
+http">
+<meta name="twitter:image" content="http://imglf1.nosdn.127.net/img/RzFXblMwRnlLZEhZNHNxWjNmcXRUcDJNTmxJZHNxQUtjWUJUbExnSlh5RmJPbVNIajlRd1BRPT0.jpg?=imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg%7Cwatermark&type=2">
   
     <link rel="alternative" href="/atom.xml" title="左华栋的博客" type="application/atom+xml">
   
@@ -146,86 +168,167 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-php_rand" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/12/14/my-new-post/" class="archive-article-date">
-  	<time datetime="2016-12-13T17:04:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-14</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/12/14/my-new-post/">我的第一篇文章</a>
+    <h1 class="article-title" itemprop="name">
+      PHP生成更好的随机数
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/文章/">文章</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/第一篇/">第一篇</a></li></ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/11/22/php_rand/" class="archive-article-date">
+        <a href="/2016/11/22/php_rand/" class="archive-article-date">
   	<time datetime="2016-11-22T14:20:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-22</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/11/22/php_rand/">PHP生成更好的随机数</a>
-    </h1>
-  
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>PHP不论是mt_rand 还是rand函数，都太差了，下面我用一张图证明：</p>
+<p>一个比较简单的方法，用随机数填充一个位图，下面是一个填充黑白图像的例子。<br>这个是用C#的System.Random类生成的随机数填充的位图、<img src="http://imglf1.nosdn.127.net/img/RzFXblMwRnlLZEhZNHNxWjNmcXRUcDJNTmxJZHNxQUtjWUJUbExnSlh5RmJPbVNIajlRd1BRPT0.jpg?=imageView&amp;thumbnail=500x0&amp;quality=96&amp;stripmeta=0&amp;type=jpg%7Cwatermark&amp;type=2" alt=""><br>这个是用php的rand函数生成的随机数填充的位图</p>
+<p><img src="http://imglf.nosdn.127.net/img/RzFXblMwRnlLZEd2M2VxcVhVMDZMclM1VzV3cDBCaHZPT1lHWmhOcjZOandhL3ZMVndyOExnPT0.jpg?=imageView&amp;thumbnail=500x0&amp;quality=96&amp;stripmeta=0&amp;type=jpg%7Cwatermark&amp;type=2" alt=""><br>那么，一目了然。</p>
+<p>PHP7下可以直接使用 random函数，</p>
+<p>但是PHP5以上没有random函数怎么办呢？</p>
+<p>看看这个吧：</p>
+<p><a href="https://github.com/paragonie/random_compat/" target="_blank" rel="external">https://github.com/paragonie/random_compat/</a></p>
 
-        <div class="article-info info-on-right">
-          
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags"></i>
 		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随机数/">随机数</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随机算法/">随机算法</a></li></ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://www.zuohuadong/2016/11/22/php_rand/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-  
-    </div></section>
-  
 
-    
+  
+<nav id="article-nav">
+  
+    <a href="/2016/12/14/my-new-post/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          我的第一篇文章
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="php_rand" data-title="PHP生成更好的随机数" data-url="//www.zuohuadong/2016/11/22/php_rand/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"zuohuadong"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
 
 
           </div>
@@ -248,8 +351,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
