@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <link rel="dns-prefetch" href="//www.zuohuadong">
+  <title>浅谈淘宝SNS化 | 左华栋的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="蘑菇街、美丽说……似乎预示着电商的SNS模式即将崛起，作为电商的老大哥淘宝也尝试着SNS话，可惜并不是那么顺利。
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;淘宝在各个入口都设置了“分享到淘江湖”，可谓用心良苦，而且改版的个人中心也让大家觉得淘宝SNS化的决心。
+ &amp;nbsp;&amp;nbsp;但是，我们却忘了最重要的三点：
+第一点：好友（淘宝上的好友几乎都是卖家与买家的关系，这样不认识的人分享东">
+<meta property="og:type" content="article">
+<meta property="og:title" content="浅谈淘宝SNS化">
+<meta property="og:url" content="//www.zuohuadong/2012/12/19/taobaosns/index.html">
+<meta property="og:site_name" content="左华栋的博客">
+<meta property="og:description" content="蘑菇街、美丽说……似乎预示着电商的SNS模式即将崛起，作为电商的老大哥淘宝也尝试着SNS话，可惜并不是那么顺利。
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;淘宝在各个入口都设置了“分享到淘江湖”，可谓用心良苦，而且改版的个人中心也让大家觉得淘宝SNS化的决心。
+ &amp;nbsp;&amp;nbsp;但是，我们却忘了最重要的三点：
+第一点：好友（淘宝上的好友几乎都是卖家与买家的关系，这样不认识的人分享东">
+<meta property="og:updated_time" content="2016-12-14T18:45:43.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="浅谈淘宝SNS化">
+<meta name="twitter:description" content="蘑菇街、美丽说……似乎预示着电商的SNS模式即将崛起，作为电商的老大哥淘宝也尝试着SNS话，可惜并不是那么顺利。
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;淘宝在各个入口都设置了“分享到淘江湖”，可谓用心良苦，而且改版的个人中心也让大家觉得淘宝SNS化的决心。
+ &amp;nbsp;&amp;nbsp;但是，我们却忘了最重要的三点：
+第一点：好友（淘宝上的好友几乎都是卖家与买家的关系，这样不认识的人分享东">
+  
+    <link rel="alternative" href="/atom.xml" title="左华栋的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/main.css?v=4.0.0.css">
+  
+
+  
+
+</head>
+
+<body>
+  <div id="container" q-class="show:isCtnShow">
+    <canvas id="anm-canvas" class="anm-canvas"></canvas>
+    <div class="left-col" q-class="show:isShow">
+      <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			<img src="/avatar.png" class="js-avatar">
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">zuohuadong</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">敢于尝试</p>
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/tags/随笔/">随笔</a></li>
+	        
+				<li><a href="/tags/web/">web</a></li>
+	        
+				<li><a href="/tags/运维/">运维</a></li>
+	        
+				<li><a href="/tags/技术/">技术</a></li>
+	        
+				<li><a href="/tags/产品/">产品</a></li>
+	        
+				<li><a href="/tags/金融/">金融</a></li>
+	        
+				<li><a href="/tags/商业/">商业</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a data-idx="0" q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
+    			
+    			
+            
+    			
+    			<a data-idx="1" q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
+    			
+    			
+            
+    			
+    			<a data-idx="2" q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+		        
+					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+		        
+					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+		        
+					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
+    </div>
+    <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-sort"></i></div>
+  		<h1 class="header-author js-mobile-header hide">zuohuadong</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img src="/avatar.png" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">zuohuadong</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">敢于尝试</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/tags/随笔/">随笔</a></li>
+		        
+					<li><a href="/tags/web/">web</a></li>
+		        
+					<li><a href="/tags/运维/">运维</a></li>
+		        
+					<li><a href="/tags/技术/">技术</a></li>
+		        
+					<li><a href="/tags/产品/">产品</a></li>
+		        
+					<li><a href="/tags/金融/">金融</a></li>
+		        
+					<li><a href="/tags/商业/">商业</a></li>
+		        
+		        
+		        	<li><a href="/archives/">所有文章</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+			        
+						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+			        
+						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+			        
+						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div id="wrapper" class="body-wrap">
+        <div class="menu-l">
+          <div class="canvas-wrap">
+            <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
+          </div>
+          <div id="js-content" class="content-ll">
+            <article id="post-taobaosns" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      浅谈淘宝SNS化
+    </h1>
+  
+
+        <a href="/2012/12/19/taobaosns/" class="archive-article-date">
+  	<time datetime="2012-12-19T09:56:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2012-12-19</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>蘑菇街、美丽说……似乎预示着电商的SNS模式即将崛起，作为电商的老大哥淘宝也尝试着SNS话，可惜并不是那么顺利。</p>
+<p> &nbsp;&nbsp;&nbsp;&nbsp;淘宝在各个入口都设置了“分享到淘江湖”，可谓用心良苦，而且改版的个人中心也让大家觉得淘宝SNS化的决心。</p>
+<p> &nbsp;&nbsp;但是，我们却忘了最重要的三点：</p>
+<p>第一点：好友（淘宝上的好友几乎都是卖家与买家的关系，这样不认识的人分享东西，你会仔细去看么？何况卖家经常会分享一些自己的东西）</p>
+<p>第二点：互动（90%以上都是买了某某商品，获得了某某勋章，这样的内容你让用户怎么互动）</p>
+<p>第三点：核心（用户来淘宝购买一件商品，几乎是不需要去看买家中心的，顺便说一句，连首页都不敢SNS化，何谈要SNS？）<br><a id="more"></a><br>&nbsp;</p>
+<p>好了，说完这么多，说说怎么去解决吧。</p>
+<p>第一：应该使用一套新的用户好友机制，最起码先得加上我认识的人吧（可能认识的人）。</p>
+<p>第二：不要强制用户去分享，而是促进用户去发一些可以互动的东西，用户主动去发的。比如：“今天淘了个东西，可惜没过两天就坏了。”“今天真累啊”</p>
+<p>第三：改首页，没必要去大规模去改，最起码的，可以看到“大家都在买什么”。在商品列表页可以滚动显示“买家的评价或者是有关的微博信息”来决定自己是否要买吧。</p>
+<p>&nbsp;</p>
+<p>说完这么多，虽不能完全概括淘宝改革的问题，但是其中一些问题我觉得还是有必要去深思的。电商和SNS是一个很复杂的东西，淘宝SNS化可能问题最多的就是卖家作弊的问题了，这个很难有好的解决办法。总之，现在的淘宝做得不错。</p>
+<p>谈得比较浅，也只是一时兴起写的，喜欢做深入研究的童鞋就没必要喷水了。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SNS/">SNS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/产品/">产品</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/商业/">商业</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/淘宝/">淘宝</a></li></ul>
+	</div>
+
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://www.zuohuadong/2012/12/19/taobaosns/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2012/12/24/qiantanbbs/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          浅谈BBS未来发展模式，BBS如何革新
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2012/12/12/vpnyun/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">VPN“如何成为用户的云</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="taobaosns" data-title="浅谈淘宝SNS化" data-url="//www.zuohuadong/2012/12/19/taobaosns/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"zuohuadong"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 zuohuadong
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		mathjax: false,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/",
+		innerArchive: true
+	}
+</script>
+
+<script src="/./main.js?v=4.0.0.js"></script>
+
+
+    
+<div class="tools-col" q-class="show:isShow,hide:isShow|isFalse" q-on="click:stop(e)">
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all" q-show="innerArchive">
+        <div class="search-wrap">
+          <input class="search-ipt" q-model="search" type="text" placeholder="find something…">
+          <i class="icon-search icon" q-show="search|isEmptyStr"></i>
+          <i class="icon-close icon" q-show="search|isNotEmptyStr" q-on="click:clearChose(e)"></i>
+        </div>
+        <div class="widget tagcloud search-tag">
+          <p class="search-tag-wording">tag:</p>
+          <label class="search-switch">
+            <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
+          </label>
+          <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">XV梦幻之旅</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">69800</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">传销</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">金融</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">互联网</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">工作</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">随笔</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">阿里巴巴</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">淘宝</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">暴风看电影</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">商业</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">产品</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">面试</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">人人网</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">大众点评</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">餐饮</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">discuz</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">DK币</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">虚拟货币</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">旁氏骗局</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">爱狗</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">二维码</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">PHP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">加密</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">技术</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">夫妻</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">网络</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">电商</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">发改委</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">解放号</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">一品威客</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">猪八戒</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">天蓬网</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">威客</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">流量清零</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">马云</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">我</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">白皮书</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">刷单</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">众筹</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">资金盘</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">经济</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">第一篇</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">web</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">随机算法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">随机数</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">苹果</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">首发</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">BBS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">论坛</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">人人网，产品</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">运营</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">人生</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">标准答案</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">适合</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">假货</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">SNS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">VPN</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">时间</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">qq</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">wechat</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">alipay</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">支付宝</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">微信</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">安全</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">易信</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">短信</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">微信电脑端</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">表情</a>
+              </li>
+            
+            <div class="clearfix"></div>
+          </ul>
+        </div>
+        <ul class="search-ul">
+          <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
+            缺失模块。<br/>1、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
+            2、在根目录_config.yml里添加配置：
+<pre style="font-size: 12px;" q-show="jsonFail">
+  jsonContent:
+    meta: false
+    pages: false
+    posts:
+      title: true
+      date: true
+      path: true
+      text: true
+      raw: false
+      content: false
+      slug: false
+      updated: false
+      comments: false
+      link: false
+      permalink: false
+      excerpt: false
+      categories: false
+      tags: true
+</pre>
+          </p>
+          <li class="search-li" q-repeat="items" q-show="isShow">
+            <a q-attr="href:path|urlformat" class="search-title"><i class="icon-quo-left icon"></i><span q-text="title"></span></a>
+            <p class="search-time">
+              <i class="icon-calendar icon"></i>
+              <span q-text="date|dateformat"></span>
+            </p>
+            <p class="search-tag">
+              <i class="icon-price-tags icon"></i>
+              <span q-repeat="tags" q-on="click:choseTag(e, name)" q-text="name|tagformat"></span>
+            </p>
+          </li>
+        </ul>
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-friends" q-show="friends">
+  		
+        <ul class="search-ul">
+          
+            <li class="search-li">
+              <a href="https://www.ibenchu.com/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>本初网络</a>
+            </li>
+          
+        </ul>
+  		
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-me" q-show="aboutme">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>
