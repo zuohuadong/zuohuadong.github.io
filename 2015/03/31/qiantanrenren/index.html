@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <link rel="dns-prefetch" href="//www.zuohuadong">
+  <title>浅谈人人网产品和运营 | 左华栋的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="时隔一年，还是将之前的见解发出来，恐怕之后再没有时间去研究了。
+作为一个“新人”，对人人并不够了解，甚至没有资格来说这，但是从用户的角度来说，对人人有着感情和不同的见解，还是希望能作出一些有用的见解。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="浅谈人人网产品和运营">
+<meta property="og:url" content="//www.zuohuadong/2015/03/31/qiantanrenren/index.html">
+<meta property="og:site_name" content="左华栋的博客">
+<meta property="og:description" content="时隔一年，还是将之前的见解发出来，恐怕之后再没有时间去研究了。
+作为一个“新人”，对人人并不够了解，甚至没有资格来说这，但是从用户的角度来说，对人人有着感情和不同的见解，还是希望能作出一些有用的见解。">
+<meta property="og:updated_time" content="2016-12-14T17:55:56.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="浅谈人人网产品和运营">
+<meta name="twitter:description" content="时隔一年，还是将之前的见解发出来，恐怕之后再没有时间去研究了。
+作为一个“新人”，对人人并不够了解，甚至没有资格来说这，但是从用户的角度来说，对人人有着感情和不同的见解，还是希望能作出一些有用的见解。">
+  
+    <link rel="alternative" href="/atom.xml" title="左华栋的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/main.css?v=4.0.0.css">
+  
+
+  
+
+</head>
+
+<body>
+  <div id="container" q-class="show:isCtnShow">
+    <canvas id="anm-canvas" class="anm-canvas"></canvas>
+    <div class="left-col" q-class="show:isShow">
+      <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			<img src="/avatar.png" class="js-avatar">
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">zuohuadong</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">敢于尝试</p>
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/tags/随笔/">随笔</a></li>
+	        
+				<li><a href="/tags/web/">web</a></li>
+	        
+				<li><a href="/tags/运维/">运维</a></li>
+	        
+				<li><a href="/tags/技术/">技术</a></li>
+	        
+				<li><a href="/tags/产品/">产品</a></li>
+	        
+				<li><a href="/tags/金融/">金融</a></li>
+	        
+				<li><a href="/tags/其他/">其他</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a data-idx="0" q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
+    			
+    			
+            
+    			
+    			<a data-idx="1" q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
+    			
+    			
+            
+    			
+    			<a data-idx="2" q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+		        
+					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+		        
+					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+		        
+					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
+    </div>
+    <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-sort"></i></div>
+  		<h1 class="header-author js-mobile-header hide">zuohuadong</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img src="/avatar.png" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">zuohuadong</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">敢于尝试</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/tags/随笔/">随笔</a></li>
+		        
+					<li><a href="/tags/web/">web</a></li>
+		        
+					<li><a href="/tags/运维/">运维</a></li>
+		        
+					<li><a href="/tags/技术/">技术</a></li>
+		        
+					<li><a href="/tags/产品/">产品</a></li>
+		        
+					<li><a href="/tags/金融/">金融</a></li>
+		        
+					<li><a href="/tags/其他/">其他</a></li>
+		        
+		        
+		        	<li><a href="/archives/">所有文章</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+			        
+						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+			        
+						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+			        
+						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div id="wrapper" class="body-wrap">
+        <div class="menu-l">
+          <div class="canvas-wrap">
+            <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
+          </div>
+          <div id="js-content" class="content-ll">
+            <article id="post-qiantanrenren" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      浅谈人人网产品和运营
+    </h1>
+  
+
+        <a href="/2015/03/31/qiantanrenren/" class="archive-article-date">
+  	<time datetime="2015-03-31T15:45:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-03-31</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>时隔一年，还是将之前的见解发出来，恐怕之后再没有时间去研究了。</p>
+<p>作为一个“新人”，对人人并不够了解，甚至没有资格来说这，但是从用户的角度来说，对人人有着感情和不同的见解，还是希望能作出一些有用的见解。<br><a id="more"></a><br>&nbsp;</p>
+<p>分析篇</p>
+<ol>
+<li><strong>上人人，找同学。</strong> </li>
+</ol>
+<p>这句话几乎成为了大学生众所周知的话，而现实情况是，经常联系的同学，会通过电话或者微信来联系，见面的第一留的是电话，其次是微信。因此人人的好友大部分是相对弱关系圈子的朋友群体，这些群体的朋友很多情况下只是偶尔联系，或者是在评论状态。人人处于这样一个尴尬局面。</p>
+<p>对于一些”一面之缘“的朋友和失去联系的老朋友，通过人人网（实名/照片）能找出这些人，然后进一步联系。大学生活充满了这种”不确定性”，人人恰好可以帮用户找到。</p>
+<p>&nbsp;</p>
+<p><strong>2.**</strong>大学生需要什么样的社交？**</p>
+<p>“陌陌”的发展，一定程度上说明大学生是缺少这种东西的，随着现在许多学生功利性越来越强，电子设备的发展迅猛，导致了日常线下交流的减少，另一方面，很多大学生生活比较悠闲却还是没机会去社交，只能去贴吧发发牢骚。自从陌陌被打上“约炮神器”这种目的性标签后，一些渴望”校园爱情”的正经人就和它划清界限了。通过微信只能和自己认识的人在一起聊天，这种碰撞往往是有着确定性的，于是越来越多的人将方向转向贴吧（部分校园是论坛），希望通过贴吧来结识一些好友慢慢发展，可是贴吧虽然人多，却也不具备这种气氛，即使是后来推出贴吧群组，仍无法满足这部分群体。</p>
+<p>首先这种社交应该是充满不确定性的，能认识一些新的好友，其次社交平台应该充分提供互动，原因在于，这部分用户有戒备心理，不愿意去聊，社交网站通过”互动“来减少这种目的性，增加双方的信任，从而避开“约炮”这种目的性问题。</p>
+<p>&nbsp;</p>
+<p>3.<strong>”**</strong>校园广场“<strong>**的尴尬。</strong></p>
+<p>从定位上来说，这款产品没有错，主打校园市场，但是人人却没给用户一个使用”校园广场”合适的理由，缺少一个闭环效应。</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>大学人人网的使用频率往往会高于新浪微博（校内交流），而人人却依旧在流失用户？</strong></p>
+<p>这不仅在于人人在校内的长期沉淀，通过人人可以认识更多校友，这些人都是实名的，因此通过人人网来联系校友相当靠谱，这虽然给添加好友提供了一个很方便的方式，但是，如果是熟人，可能回</p>
+<p><strong>运营篇</strong></p>
+<p>每次的活动目的不够明确。</p>
+<p>虽然受众主打高校学生市场，但是缺乏引导消费和刺激消费，主要依靠广告来赚钱。</p>
+<p>运营上，没有考虑到不同地区的实际情况。</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>产品篇</strong></p>
+<p><strong>现有基础上改变：</strong></p>
+<p>1.校园广场调整为好友状态中层推送（类似于新浪微博广告），侧滑可以直接切换到校园广场。</p>
+<p>2.校园广场增加签到积分制度，增强用户粘性。</p>
+<p>3.增加校园广场云平台制度，校园广场帖子按照积分（帖子数X1+回复数X0.2）由管理员开通新功能【优惠卡/会员卡/商家中心/订餐系统/交友系统/会员等级等各类插件】</p>
+<p>管理员可以自行联系商家解决这些问题，当然，运营这块要做好反欺诈行为。</p>
+<p>4.和京东或者顺丰嘿客合作，做好友送真实礼物功能。增值服务收入。</p>
+<p>5.附近的人动态（这个需要注意用户隐私问题），显示状态的原因是因为，如果只显示用户照片和昵称，直接聊天会引起用户警戒，而对状态的评论，则能减少此问题。【注意附近人的广告机推送问题】</p>
+<p>6.加强”暗恋“功能的使用，搭配附近人是一个很不错的功能，每个人只能暗恋3-5个人，不限男女，当然，选定后3周内不能更改。如果双方同时暗恋，会收到通知。</p>
+<p>7.优化发布照片功能，人人网的手机客户端，发布照片的时候，选择相册中的照片，尤其是在照片比较多的情况下，会相当卡。</p>
+<p>8.广告推送问题，一些商家注册成“人”，然后不断加好友，同时发含有广告的状态，严重影响了用户体验。(建议通过IP数据库检测等方式配合举报制度来解决)</p>
+<p>9.网页版编辑器的更新问题，无法复制图片和链接（建议使用百度开源ueditor编辑器）。</p>
+<ol>
+<li>SEO优化问题，网页版在百度搜索权重问题，百度搜索到的很多东西往往是百度贴吧，当然这肯定不排除百度自家产品的原因，但是在使用过程中，发现的主要问题是校园广场并未做SEO优化方面的努力。</li>
+</ol>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>新理念的提出：</strong></p>
+<p><strong>积分体系/**</strong>开发者中心/<strong>**签到排名</strong></p>
+<p>我一直在找一个理由，说服自己使用人人。对，周围很多人在问我，为什么使用人人，现在很多人联系都在用微信，甚至QQ都卸载了，”约炮“用陌陌，发状态用”新浪微博“，校园则使用贴吧或者论坛，似乎人人网无法给一个使用的理由。</p>
+<p>群组式社交——回归本质，聚落，关系网，兴趣圈，那~你总会有一个感兴趣的理由。</p>
+<p>群组式社交并不简单的是将现有状态转变为群组形式，主要是在于它的灵活性，或者说它甚至可以演变为现有互联网的任何基于信息类的产品。</p>
+<p>&nbsp;</p>
+<p><strong>发现：</strong>（生活的美好，只有认真才能发现）</p>
+<p>【提问】任何人可以在此提问，无论是个人/团队/还是企业，&nbsp;&nbsp;不论是神回复还是有益的回答，你总该能找到和自己臭味相投的那个人。</p>
+<p>【距离】你可以看到好友的距离，如果突然和你来到一个城市，你会收到提醒（该功能由用户选择开启），那么，是时候和好友相聚了，哪怕只是一句亲切的问候。、</p>
+<p>【周围】周围人的状态：茫茫人海，你总会找到那个他/她。</p>
+<p>【地图】你可以看到所在学校详细的地图，并可以在上面标注以及看到其他人的标注，这里是住宿的地方，这里咖啡馆味道不错。总之，这张地图更具有实用性。打通O2O，会员卡/优惠券/活动等。</p>
+<p><strong>群组:</strong>（回归社交本质，人的关系其实就是一个个的聚落）</p>
+<p>聚合版块/圈子/话题/标签/淘帖/专辑/贴吧/公众平台/校园广场为一体，可分可合。</p>
+<p>【加入有权限发帖，关注将会推送到状态。】</p>
+<p>“群组”模式允许用户自由建立，并且群主可以设置其他用户是否可以自由加入，未加入用户是否可见讨内容。群首页将类似于现在人人公共主页，如果是群内成员，还可以看到帖子区和讨论区，帖子区类似于现在论坛版块，加入的用户可以自由发帖（包括在个人首页发状态的时候同步到群组），讨论区则是现有“群组”的延续，用户可以像微博一样随时发信息，这个信息是会推送到其他用户那里的，当然其他用户也可以设置不推送。</p>
+<p>每个群组都可以根据需要使用模板，如：默认群组模板、问答模板、图片模板（适用于摄影等）。</p>
+<p>&nbsp;</p>
+<p>全封闭式群组（加入需严格审核，未加入用户不可见内容），则适合于社团，创业团队进行内部讨论以及资料交流。</p>
+<p>封闭式群组（加入需严格审核，未加入用户可见内容）的话，群组则会像杂志一样由加入的这些用户提供优质的信息，用户可以点“关注”进行信息订阅。</p>
+<p>开放式群组（用户可以自由加入，未加入用户可见内容）的话，群组则像一个论坛，允许一些感兴趣或者志同道合的人来进行讨论。【校园广场是属于特殊的开放式群组】</p>
+<p>&nbsp;</p>
+<p>封闭式群组的(公众账号)玩法：（集合人人公众主页/小站/人人公众平台）</p>
+<p>企业</p>
+<p>企业可以定制内部的信息群组（对外）</p>
+<p>让关注企业的人可以随时通过企业了解招聘及能力需要，了解企业文化。</p>
+<p>团队</p>
+<p>如果有想法创业，想找到志同道合的人，也可以通过建立自己的群组。</p>
+<p>可以设定项目，提出想法，以便于更多人关注和投资。找到志同道合的人。</p>
+<p>个人</p>
+<p>我们提供了信息推送的模式，方便个人将一些诸如管理技巧，发布在群组上。</p>
+<p>其他用户可以关注此类信息，来提升自己的能力。</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>状态：</strong>（关注的群组信息/关注的用户信息/特别关注的群组）</p>
+<p>通过数据算法，保证用户每次看到的不同群组内容都不同，</p>
+<p>你总该会看到不一样的东西，去探寻你喜欢的信息，或者~喜欢的人。</p>
+<p>&nbsp;</p>
+<p><strong>发布：</strong></p>
+<p>用户可以直接发布新鲜事/照片（加或者不加标题均可），但是必须同步到某一群组，默认群组为用户所在校园。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/人人网，产品/">人人网，产品</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/运营/">运营</a></li></ul>
+	</div>
+
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://www.zuohuadong/2015/03/31/qiantanrenren/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2015/07/16/aboutjobs/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          【转】我为什么要放弃机关单位在一线城市工作
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/03/31/renren-fazhan/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">浅谈人人网发展</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="qiantanrenren" data-title="浅谈人人网产品和运营" data-url="//www.zuohuadong/2015/03/31/qiantanrenren/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"zuohuadong"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 zuohuadong
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		mathjax: false,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/",
+		innerArchive: true
+	}
+</script>
+
+<script src="/./main.js?v=4.0.0.js"></script>
+
+
+    
+<div class="tools-col" q-class="show:isShow,hide:isShow|isFalse" q-on="click:stop(e)">
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all" q-show="innerArchive">
+        <div class="search-wrap">
+          <input class="search-ipt" q-model="search" type="text" placeholder="find something…">
+          <i class="icon-search icon" q-show="search|isEmptyStr"></i>
+          <i class="icon-close icon" q-show="search|isNotEmptyStr" q-on="click:clearChose(e)"></i>
+        </div>
+        <div class="widget tagcloud search-tag">
+          <p class="search-tag-wording">tag:</p>
+          <label class="search-switch">
+            <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
+          </label>
+          <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">XV梦幻之旅</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">69800</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">传销</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">金融</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">互联网</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">工作</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">随笔</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">阿里巴巴</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">淘宝</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">产品</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">面试</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">人人网</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">大众点评</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">餐饮</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">DK币</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">虚拟货币</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">旁氏骗局</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">爱狗</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">二维码</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">PHP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">加密</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">技术</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">网络</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">电商</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">发改委</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">解放号</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">一品威客</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">猪八戒</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">天蓬网</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">威客</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">马云</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">刷单</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">众筹</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">资金盘</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">经济</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">第一篇</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">web</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">随机算法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">随机数</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">人人网，产品</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">运营</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">假货</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">微信</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">微信电脑端</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">qq</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">wechat</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">alipay</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">支付宝</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">安全</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">易信</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">短信</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">表情</a>
+              </li>
+            
+            <div class="clearfix"></div>
+          </ul>
+        </div>
+        <ul class="search-ul">
+          <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
+            缺失模块。<br/>1、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
+            2、在根目录_config.yml里添加配置：
+<pre style="font-size: 12px;" q-show="jsonFail">
+  jsonContent:
+    meta: false
+    pages: false
+    posts:
+      title: true
+      date: true
+      path: true
+      text: true
+      raw: false
+      content: false
+      slug: false
+      updated: false
+      comments: false
+      link: false
+      permalink: false
+      excerpt: false
+      categories: false
+      tags: true
+</pre>
+          </p>
+          <li class="search-li" q-repeat="items" q-show="isShow">
+            <a q-attr="href:path|urlformat" class="search-title"><i class="icon-quo-left icon"></i><span q-text="title"></span></a>
+            <p class="search-time">
+              <i class="icon-calendar icon"></i>
+              <span q-text="date|dateformat"></span>
+            </p>
+            <p class="search-tag">
+              <i class="icon-price-tags icon"></i>
+              <span q-repeat="tags" q-on="click:choseTag(e, name)" q-text="name|tagformat"></span>
+            </p>
+          </li>
+        </ul>
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-friends" q-show="friends">
+  		
+        <ul class="search-ul">
+          
+            <li class="search-li">
+              <a href="https://www.ibenchu.com/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>本初网络</a>
+            </li>
+          
+        </ul>
+  		
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-me" q-show="aboutme">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>
