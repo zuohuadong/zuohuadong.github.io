@@ -10,26 +10,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="作为一个产品君，其实写这种东西心里是没底的。
 事情起因是这样，因为项目需求，技术那边需要写一套算法，生成唯一的二维码，用户扫描二维码获得积分，而且只能使用一次。
-——————–如果你想知道最终结果，请直接拉到文章末尾—————-
-然后技术用了php7的随机算法，加上哈希和时间戳的，但是有一个很重要的问题是：如果在1ms内生成多个，由于随机算法的原因，有可能出现重复。
-最近刚好在看rsa算法，于是想">
+——————–如果你想知道最终结果，请直接拉到文章末尾—————-">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于生成唯一加密二维码的方案">
 <meta property="og:url" content="//www.zuohuadong/2016/11/22/ercode/index.html">
 <meta property="og:site_name" content="左华栋的博客">
 <meta property="og:description" content="作为一个产品君，其实写这种东西心里是没底的。
 事情起因是这样，因为项目需求，技术那边需要写一套算法，生成唯一的二维码，用户扫描二维码获得积分，而且只能使用一次。
-——————–如果你想知道最终结果，请直接拉到文章末尾—————-
-然后技术用了php7的随机算法，加上哈希和时间戳的，但是有一个很重要的问题是：如果在1ms内生成多个，由于随机算法的原因，有可能出现重复。
-最近刚好在看rsa算法，于是想">
-<meta property="og:updated_time" content="2016-12-14T16:37:49.000Z">
+——————–如果你想知道最终结果，请直接拉到文章末尾—————-">
+<meta property="og:updated_time" content="2016-12-14T16:41:06.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于生成唯一加密二维码的方案">
 <meta name="twitter:description" content="作为一个产品君，其实写这种东西心里是没底的。
 事情起因是这样，因为项目需求，技术那边需要写一套算法，生成唯一的二维码，用户扫描二维码获得积分，而且只能使用一次。
-——————–如果你想知道最终结果，请直接拉到文章末尾—————-
-然后技术用了php7的随机算法，加上哈希和时间戳的，但是有一个很重要的问题是：如果在1ms内生成多个，由于随机算法的原因，有可能出现重复。
-最近刚好在看rsa算法，于是想">
+——————–如果你想知道最终结果，请直接拉到文章末尾—————-">
   
     <link rel="alternative" href="/atom.xml" title="左华栋的博客" type="application/atom+xml">
   
@@ -199,7 +193,7 @@
       
         <p>作为一个产品君，其实写这种东西心里是没底的。</p>
 <p>事情起因是这样，因为项目需求，技术那边需要写一套算法，生成唯一的二维码，用户扫描二维码获得积分，而且只能使用一次。</p>
-<p>——————–如果你想知道最终结果，请直接拉到文章末尾—————-</p>
+<p>——————–如果你想知道最终结果，请直接拉到文章末尾—————-<br><a id="more"></a></p>
 <p>然后技术用了php7的随机算法，加上哈希和时间戳的，但是有一个很重要的问题是：如果在1ms内生成多个，由于随机算法的原因，有可能出现重复。</p>
 <p>最近刚好在看rsa算法，于是想到了通过rsa算法来加密，当然，为了生成的二维码具有可辨识度，使用了不怎么安全的512位算法。</p>
 <p>而且为了不跟url冲突，需要对加密后的字符串进行urlcode编码，这样大概的长度是95位。</p>
@@ -331,20 +325,15 @@
   
 <nav id="article-nav">
   
-    <a href="/2016/12/14/my-new-post/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/11/22/php_rand/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          我的第一篇文章
+          PHP生成更好的随机数
         
       </div>
     </a>
   
-  
-    <a href="/2016/11/22/php_rand/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">PHP生成更好的随机数</div>
-      <i class="icon-circle-right"></i>
-    </a>
   
 </nav>
 
@@ -427,10 +416,6 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)">二维码 - PHP - 加密 - 技术</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)">第一篇</a>
               </li>
              
@@ -452,6 +437,10 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)">随机数</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">二维码 - PHP - 加密 - 技术</a>
               </li>
             
             <div class="clearfix"></div>

@@ -9,32 +9,20 @@
   <title>PHP生成更好的随机数 | 左华栋的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="PHP不论是mt_rand 还是rand函数，都太差了，下面我用一张图证明：
-一个比较简单的方法，用随机数填充一个位图，下面是一个填充黑白图像的例子。这个是用C#的System.Random类生成的随机数填充的位图。这个是用php的rand函数生成的随机数填充的位图那么，一目了然。
-PHP7下可以直接使用 random函数，
-但是PHP5以上没有random函数怎么办呢？
-看看这个吧：
-https">
+一个比较简单的方法，用随机数填充一个位图，下面是一个填充黑白图像的例子。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PHP生成更好的随机数">
 <meta property="og:url" content="//www.zuohuadong/2016/11/22/php_rand/index.html">
 <meta property="og:site_name" content="左华栋的博客">
 <meta property="og:description" content="PHP不论是mt_rand 还是rand函数，都太差了，下面我用一张图证明：
-一个比较简单的方法，用随机数填充一个位图，下面是一个填充黑白图像的例子。这个是用C#的System.Random类生成的随机数填充的位图。这个是用php的rand函数生成的随机数填充的位图那么，一目了然。
-PHP7下可以直接使用 random函数，
-但是PHP5以上没有random函数怎么办呢？
-看看这个吧：
-https">
+一个比较简单的方法，用随机数填充一个位图，下面是一个填充黑白图像的例子。">
 <meta property="og:image" content="http://imglf1.nosdn.127.net/img/RzFXblMwRnlLZEhZNHNxWjNmcXRUcDJNTmxJZHNxQUtjWUJUbExnSlh5RmJPbVNIajlRd1BRPT0.jpg?=imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg%7Cwatermark&type=2">
 <meta property="og:image" content="http://imglf.nosdn.127.net/img/RzFXblMwRnlLZEd2M2VxcVhVMDZMclM1VzV3cDBCaHZPT1lHWmhOcjZOandhL3ZMVndyOExnPT0.jpg?=imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg%7Cwatermark&type=2">
-<meta property="og:updated_time" content="2016-12-14T16:39:12.000Z">
+<meta property="og:updated_time" content="2016-12-14T16:40:56.137Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PHP生成更好的随机数">
 <meta name="twitter:description" content="PHP不论是mt_rand 还是rand函数，都太差了，下面我用一张图证明：
-一个比较简单的方法，用随机数填充一个位图，下面是一个填充黑白图像的例子。这个是用C#的System.Random类生成的随机数填充的位图。这个是用php的rand函数生成的随机数填充的位图那么，一目了然。
-PHP7下可以直接使用 random函数，
-但是PHP5以上没有random函数怎么办呢？
-看看这个吧：
-https">
+一个比较简单的方法，用随机数填充一个位图，下面是一个填充黑白图像的例子。">
 <meta name="twitter:image" content="http://imglf1.nosdn.127.net/img/RzFXblMwRnlLZEhZNHNxWjNmcXRUcDJNTmxJZHNxQUtjWUJUbExnSlh5RmJPbVNIajlRd1BRPT0.jpg?=imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg%7Cwatermark&type=2">
   
     <link rel="alternative" href="/atom.xml" title="左华栋的博客" type="application/atom+xml">
@@ -204,7 +192,7 @@ https">
     <div class="article-entry" itemprop="articleBody">
       
         <p>PHP不论是mt_rand 还是rand函数，都太差了，下面我用一张图证明：</p>
-<p>一个比较简单的方法，用随机数填充一个位图，下面是一个填充黑白图像的例子。<br>这个是用C#的System.Random类生成的随机数填充的位图。<br><img src="http://imglf1.nosdn.127.net/img/RzFXblMwRnlLZEhZNHNxWjNmcXRUcDJNTmxJZHNxQUtjWUJUbExnSlh5RmJPbVNIajlRd1BRPT0.jpg?=imageView&amp;thumbnail=500x0&amp;quality=96&amp;stripmeta=0&amp;type=jpg%7Cwatermark&amp;type=2" alt=""><br>这个是用php的rand函数生成的随机数填充的位图<br><img src="http://imglf.nosdn.127.net/img/RzFXblMwRnlLZEd2M2VxcVhVMDZMclM1VzV3cDBCaHZPT1lHWmhOcjZOandhL3ZMVndyOExnPT0.jpg?=imageView&amp;thumbnail=500x0&amp;quality=96&amp;stripmeta=0&amp;type=jpg%7Cwatermark&amp;type=2" alt=""><br>那么，一目了然。</p>
+<p>一个比较简单的方法，用随机数填充一个位图，下面是一个填充黑白图像的例子。<br><a id="more"></a><br>这个是用C#的System.Random类生成的随机数填充的位图。<br><img src="http://imglf1.nosdn.127.net/img/RzFXblMwRnlLZEhZNHNxWjNmcXRUcDJNTmxJZHNxQUtjWUJUbExnSlh5RmJPbVNIajlRd1BRPT0.jpg?=imageView&amp;thumbnail=500x0&amp;quality=96&amp;stripmeta=0&amp;type=jpg%7Cwatermark&amp;type=2" alt=""><br>这个是用php的rand函数生成的随机数填充的位图<br><img src="http://imglf.nosdn.127.net/img/RzFXblMwRnlLZEd2M2VxcVhVMDZMclM1VzV3cDBCaHZPT1lHWmhOcjZOandhL3ZMVndyOExnPT0.jpg?=imageView&amp;thumbnail=500x0&amp;quality=96&amp;stripmeta=0&amp;type=jpg%7Cwatermark&amp;type=2" alt=""><br>那么，一目了然。</p>
 <p>PHP7下可以直接使用 random函数，</p>
 <p>但是PHP5以上没有random函数怎么办呢？</p>
 <p>看看这个吧：</p>
@@ -307,15 +295,20 @@ https">
   
 <nav id="article-nav">
   
-    <a href="/2016/11/22/ercode/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/12/14/my-new-post/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          关于生成唯一加密二维码的方案
+          我的第一篇文章
         
       </div>
     </a>
   
+  
+    <a href="/2016/11/22/ercode/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">关于生成唯一加密二维码的方案</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
@@ -398,10 +391,6 @@ https">
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)">二维码 - PHP - 加密 - 技术</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)">第一篇</a>
               </li>
              
@@ -423,6 +412,10 @@ https">
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)">随机数</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">二维码 - PHP - 加密 - 技术</a>
               </li>
             
             <div class="clearfix"></div>

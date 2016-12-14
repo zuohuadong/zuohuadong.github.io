@@ -222,6 +222,63 @@
 
 
   
+    <article id="post-php_rand" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/22/php_rand/">PHP生成更好的随机数</a>
+    </h1>
+  
+
+        <a href="/2016/11/22/php_rand/" class="archive-article-date">
+  	<time datetime="2016-11-22T14:20:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-22</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>PHP不论是mt_rand 还是rand函数，都太差了，下面我用一张图证明：</p>
+<p>一个比较简单的方法，用随机数填充一个位图，下面是一个填充黑白图像的例子。<br>
+        
+          <a class="article-more-a" href="/2016/11/22/php_rand/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随机数/">随机数</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随机算法/">随机算法</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/11/22/php_rand/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
     <article id="post-ercode" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -242,41 +299,10 @@
       
         <p>作为一个产品君，其实写这种东西心里是没底的。</p>
 <p>事情起因是这样，因为项目需求，技术那边需要写一套算法，生成唯一的二维码，用户扫描二维码获得积分，而且只能使用一次。</p>
-<p>——————–如果你想知道最终结果，请直接拉到文章末尾—————-</p>
-<p>然后技术用了php7的随机算法，加上哈希和时间戳的，但是有一个很重要的问题是：如果在1ms内生成多个，由于随机算法的原因，有可能出现重复。</p>
-<p>最近刚好在看rsa算法，于是想到了通过rsa算法来加密，当然，为了生成的二维码具有可辨识度，使用了不怎么安全的512位算法。</p>
-<p>而且为了不跟url冲突，需要对加密后的字符串进行urlcode编码，这样大概的长度是95位。</p>
-<p><strong>所以这个方案一的执行结果是：</strong></p>
-<p>第一步：生成唯一ID并制定好规则</p>
-<p>商品ID（4位）+8位纯数字（唯一）&nbsp;【生成的时候使用sqlite3 数据库进行自增，以保证生成的字符串唯一】</p>
-<p>第二步：使用公钥加密并且转化成urlcode编码</p>
-<p>第三步：生成网址二维码。</p>
-<p><a href="http://aaa.com/code/这里是urlcode编码" target="_blank" rel="external">http://aaa.com/code/这里是urlcode编码</a></p>
-<p>第四步：服务端使用私钥解密，并且验证是否符合第一步的规则。</p>
-<p>并且在数据库里做记录，防止重复验证。</p>
-<p>（这里可以设定失效日期，减少数据库的占用和改善查询性能。定期做清理。数据库使用postgresql，查询性能会比mysql好一些）</p>
-<p>方案的好处当然是拥有一对密钥，即使丢失一个，影响也不是很大。</p>
-<p>问题也存在：第一就是RSA加密解密性能问题，第二就是数据库查询问题。</p>
-<p>这两个基本上决定了性能不可能快。</p>
-<p>于是想到了直接用hash值加密，全部存在数据库中，但是这样的话需要一行行比对，而且在字符串比较长的情况下，很耗费时间。能不能有一个明文的ID进行索引呢？</p>
-<p>后来突然想到网站的用户名密码方案。</p>
-<p>这里先说一下网站用户名密码的加密方案。</p>
-<p>密码先通过JS的hash加密，传送给服务端，服务端再进行一次加密，然后比对数据库里面的已加密值，由于整个过程中是密文传输（数据库里也只存储密文），且hash是不可逆的。所以是很安全的算法。</p>
-<p>那么现在将用户名看作是唯一ID，密码hash的值看作是密钥，由于hash是不可逆的，所以不存在解密的可能性。</p>
-<p>那现在的方案是：</p>
-<p>第一步：确定唯一的二维码ID（明文）</p>
-<p>商品ID（4位）+8位纯数字（唯一）&nbsp;【生成的时候使用sqlite3 数据库进行自增，以保证生成的字符串唯一】</p>
-<p>第二步：随机生成一个哈希值（当然这个要存在数据库里了）</p>
-<p>第三步：生成二维码</p>
-<p><a href="http://aaa.com/code/123412345678/这里是哈希值&amp;nbsp" target="_blank" rel="external">http://aaa.com/code/123412345678/这里是哈希值&amp;nbsp</a>;</p>
-<p>1234是商品ID，12345678是唯一ID。</p>
-<p>第四步：验证，以ID为索引，查找对应的值是否正确。</p>
-<p>当然注意，验证过的可以删掉或者标记为已使用。</p>
-<p>上述商品ID和8位数字要占用掉12位，而且看起来也不是很安全，那么我们可以通过这个工具，进行加密的同时，缩短它的位数：<a href="http://hashids.org/php/" target="_blank" rel="external">http://hashids.org/php/</a></p>
-<p>1234,12345678&nbsp;可以缩成：ekNs4zWJM&nbsp;&nbsp;（9位加密字符串）</p>
-<p>当然，其实也可以不用到hash，直接用PHP随机算法生成。</p>
-<p>具体可以查看：<a href="http://www.zuohuadong.cn/2016/11/22/php_rand/" target="_blank" rel="external">http://www.zuohuadong.cn/2016/11/22/php_rand/</a></p>
-
+<p>——————–如果你想知道最终结果，请直接拉到文章末尾—————-<br>
+        
+          <a class="article-more-a" href="/2016/11/22/ercode/#more">more >></a>
+        
       
 
       
@@ -294,65 +320,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2016/11/22/ercode/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-php_rand" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/22/php_rand/">PHP生成更好的随机数</a>
-    </h1>
-  
-
-        <a href="/2016/11/22/php_rand/" class="archive-article-date">
-  	<time datetime="2016-11-22T14:20:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-22</time>
-</a>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>PHP不论是mt_rand 还是rand函数，都太差了，下面我用一张图证明：</p>
-<p>一个比较简单的方法，用随机数填充一个位图，下面是一个填充黑白图像的例子。<br>这个是用C#的System.Random类生成的随机数填充的位图。<br><img src="http://imglf1.nosdn.127.net/img/RzFXblMwRnlLZEhZNHNxWjNmcXRUcDJNTmxJZHNxQUtjWUJUbExnSlh5RmJPbVNIajlRd1BRPT0.jpg?=imageView&amp;thumbnail=500x0&amp;quality=96&amp;stripmeta=0&amp;type=jpg%7Cwatermark&amp;type=2" alt=""><br>这个是用php的rand函数生成的随机数填充的位图<br><img src="http://imglf.nosdn.127.net/img/RzFXblMwRnlLZEd2M2VxcVhVMDZMclM1VzV3cDBCaHZPT1lHWmhOcjZOandhL3ZMVndyOExnPT0.jpg?=imageView&amp;thumbnail=500x0&amp;quality=96&amp;stripmeta=0&amp;type=jpg%7Cwatermark&amp;type=2" alt=""><br>那么，一目了然。</p>
-<p>PHP7下可以直接使用 random函数，</p>
-<p>但是PHP5以上没有random函数怎么办呢？</p>
-<p>看看这个吧：</p>
-<p><a href="https://github.com/paragonie/random_compat/" target="_blank" rel="external">https://github.com/paragonie/random_compat/</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随机数/">随机数</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随机算法/">随机算法</a></li></ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/11/22/php_rand/">展开全文 >></a>
         </p>
       
 
@@ -424,10 +391,6 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)">二维码 - PHP - 加密 - 技术</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)">第一篇</a>
               </li>
              
@@ -449,6 +412,10 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)">随机数</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">二维码 - PHP - 加密 - 技术</a>
               </li>
             
             <div class="clearfix"></div>
